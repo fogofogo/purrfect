@@ -1,0 +1,36 @@
+.statistic {
+    background-color: #daedfb;
+    border-radius: 10px;
+    padding: 10px;
+    width: calc(50% - 20px);
+    display: flex;
+    margin-bottom: 20px;
+    
+
+    @media (min-width: 1200px) {
+        width: 20%;
+        margin-bottom: 0px;
+      }
+
+    .icon {
+        font-size: 40px;
+        color: #6ebaf0;
+        display: flex;
+        align-items: center;
+        margin-right: 10px
+    }
+
+    .content {
+        .label {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 500;
+            color: #309dea;
+        }
+        .value {
+            font-size: 22px;
+            font-weight: 600;
+            color: #5b5c5c;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+$linkColor: #309dea;
+$buttonColor: #f0f8ff;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 30px 0;
+    border-bottom: 2px solid #daedfb;
+    padding-bottom: 30px;
+
+    img {
+        width: 230px;
+        height: auto;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+        background-color: $buttonColor;
+        border-radius: 8px;
+        a {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            color: $linkColor;
+
+            &:hover {
+                color: darken($linkColor, 15%);
+            }
+
+        }
+
+        &:hover {
+            background-color: darken($buttonColor, 5%);
+        }
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+       
+    }
+}
