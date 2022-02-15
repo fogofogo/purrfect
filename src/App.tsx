@@ -9,8 +9,8 @@ import { getOrders, setLoading, IOrder } from "./action";
 import { Container } from "react-bootstrap";
 import "./App.scss";
 
-const api_key = "keyoqSlTPT86h9cSr";
-const base = new Airtable({ apiKey: api_key }).base("app8wLQrrIMrnn673");
+const api_key = "xxxx-xxxx-xxxx-xxxx";
+const base = new Airtable({ apiKey: api_key }).base("xxxx-xxxx"); // Please add your Airbase creds
 
 const App = () => {
   const dispatch = useDispatch();
